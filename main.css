@@ -1,4 +1,4 @@
-body {
+body{
   background-image: url(img/main_bg.png);
   background-color: #5050f5;
   background: webkit-gradient(
@@ -23,6 +23,7 @@ body {
   background-position: 50% 50%;
   background-size: contain;
 }
+
 
 .heading{
   color: white;
