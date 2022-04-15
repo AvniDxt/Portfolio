@@ -16,7 +16,7 @@ body {
   font-size: 15px;
   font-family: poppins, Helvetica, sans-serif;
   line-height: 1.65em;
-  overflow: hidden;
+  overflow: scroll;
   color: #d5d5d5;
   background-repeat: no-repeat;
   background-position: center;
