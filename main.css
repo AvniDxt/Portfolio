@@ -1,14 +1,6 @@
-body{
-  background-image: url(img/main_bg.png);
-  background-color: #5050f5;
-  background: webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#9d2bf3),
-    to(#5050f5)
-  );
-  background: linear-gradient(#9d2bf3, #5050f5);
+body {
+  background-image: url("img/main.png");
+  background-color: #9d2bf3;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -24,29 +16,36 @@ body{
   background-size: contain;
 }
 
+h1{
+  font-size: 70px;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: #bf006c;
+  border: 28px solid darkgrey;
+  background-color: darkgrey;
+  text-align: center;
+  text-decoration: underline;
+}
 
-.heading{
-  color: white;
-  font-size: 30px;
-  vertical-align: top;
-  margin-top: 0px;
+marquee{
+  display: contents;
 }
 
 .page {
   display: block;
-  width: 500;
+  width: 100%;
   height: 100%;
-  padding: 0 100px;
-  margin-top: -800px;
+  margin-top: -820px;
+  margin-bottom: -100px;
+  padding-bottom: 20px;
   overflow: hidden;
 }
 .page-content {
   position: relative;
   width: 100%;
   max-width: 1280px;
-  min-height: 93vh;
+  min-height: 85vh;
   margin: 10vh auto;
-  padding: 0;
   background-color: #444;
   -webkit-box-shadow: 0 0 100px -5px black;
   -moz-box-shadow: 0 0 100px -5px black;
@@ -112,33 +111,23 @@ body{
 
 .header-buttons {
   margin-top: 20px;
+  text-align: center;
 }
 
 .header-buttons .btn-primary {
   background-color: transparent;
-  font-size: 20px;
-  color: #f5f5f5;
+  color: grey;
+  background-color: white;
   border-radius: 12px;
-  border-color: #f5f5f5;
+  font-size: 46px;
+  padding: 15px 30px 15px 30px;
 }
 
 .header-buttons .btn-primary:hover {
   background-color: #fff;
   color: #5050f5;
-  border-color: #fff;
-  padding: 10px;
-}
-
-.header .copyrights {
-  color: #bbb;
-  width: 380px;
-  position: absolute;
-  bottom: 0;
-  left: 18px;
-  padding: 5px 10px 15px;
-  line-height: 14px;
-  font-size: 12px;
-  text-align: center;
+  background-color: white;
+  padding: 15px 30px 15px 30px;
 }
 
 .social-links {
@@ -163,6 +152,7 @@ body{
   line-height: 30px;
   text-align: center;
   opacity: 0.9;
+  margin-top: 20px;
 }
 .social-links ul li a:hover {
   opacity: 1;
@@ -203,4 +193,137 @@ body{
 
 .aboutme h3{
   text-decoration: underline;
+}
+
+.head{
+  font-size: 60px;
+  font-family: serif;
+  font-weight: 800;
+  color: #bf006c;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.col-1{
+    flex-basis: 25%;
+    padding: 50px;
+    min-width: 200px;
+    margin-top: -80px;
+    margin-bottom: 50px;
+    margin-left: -15px;
+}
+.col-1 img{
+    width: 700px;
+    height: 450px;
+}
+.col-1 img:hover{
+  transform: scale(1.05);
+  transition-duration: 300ms;
+}
+.col-1 h4{
+  text-decoration: underline;
+  color: darkblue;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 270px;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 750px;
+    margin-top: -690px;
+    margin-left: -22px;
+}
+.col-2{
+    flex-basis: 25%;
+    padding: 50px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-2 img{
+    width: 715px;
+    height: 458px;
+}
+.col-2 img:hover{
+  transform: scale(1.05);
+  transition-duration: 300ms;
+}
+.col-2 h4{
+  text-decoration: underline;
+  color: darkblue;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 310px;
+}
+
+.section h2{
+  margin-top: -50px;
+  color: darkblue;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.btn{
+  margin-bottom: 40px;
+}
+
+.btn a{
+  background-color: rgb(206, 204, 204);
+  border: 2px solid #274773;
+  color: #274773;
+  font-size: 15px;
+  border-radius: 30px;
+  padding: 15px 30px 15px 30px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.btn a:hover{
+  background-color: #274773;
+  color: rgb(206, 204, 204);
+}
+
+
+.container{
+  text-align: center;
+  margin-left: 510px;
+}
+
+.footer-cols{
+    color: white;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr); /*1 fractional unit*/
+    padding: 2rem;
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer-cols ul{
+    list-style: none;
+}
+
+.footer-cols ul li:first-child{
+    font-size: 1.4rem;
+    padding-bottom: 0.5rem;
+    border-bottom: #444 solid 1px;
+    margin-bottom: 1rem;
+}
+
+.footer-cols ul li h2{
+  color: black;
+  margin-top: 1px;
+}
+
+.footer-cols ul li span{
+  color: #313332;
+}
+
+.footer-bottom{
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
 }
