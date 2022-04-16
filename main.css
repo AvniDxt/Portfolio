@@ -1,58 +1,46 @@
 body {
   background-image: url("img/main_bg.png");
   background-color: #9d2bf3;
+  align-items: center;
   margin: 0;
   width: 100%;
   height: 100%;
-  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   font-size: 15px;
   font-family: poppins, Helvetica, sans-serif;
   line-height: 1.65em;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   color: white;
-  background-position: center;
-  background-size: contain;
 }
 
 h1 {
-  padding: 15px 30px 15px 30px;
-  margin-top: 0;
-  margin-left: 28%;
-  display: inline-block;
   font-size: 90px;
   font-family: sans-serif;
-  font-weight: 800;
+  font-weight: 900;
   color: yellow;
-  border: 28px solid blue;
-  border-radius: 20px;
-  background-color: blue;
   text-align: center;
 }
 
-.page {
-  display: block;
+hr{
+  height: 2px;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  margin-top: -820px;
-  margin-bottom: -100px;
-  padding-bottom: 20px;
-  overflow: hidden;
+  background-color: blue;
+  border-color: blue;
+}
+
+.page {
+  display: contents;
 }
 
 .page-content {
   display: inline-block;
-  width: 100%;
-  max-width: 1280px;
-  min-height: 55vh;
-  margin: 10vh auto;
+  width: 75%;
   background-color: #4a494a;
-  -webkit-box-shadow: 0 0 100px -5px black;
-  -moz-box-shadow: 0 0 100px -5px black;
-  box-shadow: 0 0 30px -2px black;
   border-radius: 32px;
-  backface-visibility: hidden;
-  margin-left: 120px;
-  margin-top: 50px;
+  margin: 0px;
 }
 
 .page-content h1 {
@@ -115,7 +103,7 @@ h1 {
 }
 
 .header-buttons {
-  margin-top: 20px;
+  margin-top: 1px;
   text-align: center;
 }
 
@@ -142,12 +130,6 @@ h1 {
 
 .social-links {
   margin: 10px 140px;
-}
-
-.social-links hr {
-  width: 150px;
-  margin-left: -25px;
-  border-color: black;
 }
 
 .social-links ul {
@@ -191,10 +173,7 @@ h1 {
 }
 
 #showcase {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100vh;
+  height: 1vh;
   /*viewport height*/
   position: relative;
   overflow: hidden;
@@ -217,6 +196,8 @@ h1 {
 }
 
 .head {
+  display: block;
+  position: relative;
   font-size: 45px;
   font-family: serif;
   font-weight: 800;
@@ -227,17 +208,14 @@ h1 {
 }
 
 .col-1 {
-  flex-basis: 25%;
   padding: 50px;
-  min-width: 200px;
   margin-top: -80px;
   margin-bottom: 50px;
-  margin-left: -15px;
 }
 
 .col-1 img {
-  width: 700px;
-  height: 450px;
+  width: 110vh;
+  height: 76vh;
 }
 
 .col-1 img:hover {
@@ -250,15 +228,7 @@ h1 {
   color: blue;
   font-size: 20px;
   font-weight: bold;
-  padding-left: 265px;
-}
-
-.small-container {
-  max-width: 1080px;
-  margin: auto;
-  padding-left: 750px;
-  margin-top: -690px;
-  margin-left: -22px;
+  text-align: center;
 }
 
 .col-2 {
@@ -269,8 +239,8 @@ h1 {
 }
 
 .col-2 img {
-  width: 715px;
-  height: 458px;
+  width: 110vh;
+  height: 66vh;
 }
 
 .col-2 img:hover {
@@ -279,11 +249,12 @@ h1 {
 }
 
 .col-2 h4 {
+  margin-top: -80px;
   text-decoration: underline;
   color: blue;
   font-size: 20px;
   font-weight: bold;
-  padding-left: 310px;
+  text-align: center;
 }
 
 .section h2 {
@@ -296,10 +267,14 @@ h1 {
 }
 
 .btn {
-  margin-left: -150px;
+  margin-left: -10px;
 }
 
 .btn a {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+    margin: 0.2em;
+    margin-bottom: 1.2em;
   display: inline-block;
 }
 
@@ -311,12 +286,17 @@ h1 {
 .btn1 {
   border: 2px solid white;
   border-radius: 44px;
-  padding: 24px;
-  font-size: 28px;
-  text-align: center;
+  padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   color: white;
+  text-align: center;
   background-color: #5050f5;
   text-decoration: none;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .btn1:hover {
@@ -328,12 +308,17 @@ h1 {
 .btn2 {
   border: 2px solid white;
   border-radius: 44px;
-  padding: 24px;
-  font-size: 28px;
-  text-align: center;
+  padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   color: white;
+  text-align: center;
   background-color: #b5554a;
   text-decoration: none;
+  letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .btn2:hover {
@@ -345,12 +330,17 @@ h1 {
 .btn3 {
   border: 2px solid white;
   border-radius: 44px;
-  padding: 24px;
-  font-size: 28px;
-  text-align: center;
+  padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   color: white;
+  text-align: center;
   background-color: #d400d4;
   text-decoration: none;
+  letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .btn3:hover {
@@ -362,12 +352,17 @@ h1 {
 .btn4 {
   border: 2px solid white;
   border-radius: 44px;
-  padding: 24px;
-  font-size: 28px;
-  text-align: center;
+  padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   color: white;
+  text-align: center;
   background-color: #5da312;
   text-decoration: none;
+  letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .btn4:hover {
@@ -380,12 +375,17 @@ h1 {
   margin-top: 30px;
   border: 2px solid white;
   border-radius: 44px;
-  padding: 24px;
-  font-size: 28px;
-  text-align: center;
+  padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   color: white;
+  text-align: center;
   background-color: gold;
   text-decoration: none;
+  letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .btn5:hover {
@@ -397,12 +397,17 @@ h1 {
 .btn6 {
   border: 2px solid white;
   border-radius: 44px;
-  padding: 24px;
-  font-size: 28px;
-  text-align: center;
+  padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   color: white;
+  text-align: center;
   background-color: red;
   text-decoration: none;
+  letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .btn6:hover {
@@ -414,12 +419,17 @@ h1 {
 .btn7 {
   border: 2px solid white;
   border-radius: 44px;
-  padding: 24px;
-  font-size: 28px;
-  text-align: center;
+  padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   color: white;
+  text-align: center;
   background-color: navy;
   text-decoration: none;
+  letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .btn7:hover {
@@ -430,17 +440,12 @@ h1 {
 
 .container {
   text-align: center;
-  margin-left: 510px;
 }
 
 .footer-cols {
   color: white;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
-  /*1 fractional unit*/
+  display: contents;
   padding: 2rem;
-  text-align: center;
   font-size: 30px;
 }
 
@@ -450,9 +455,8 @@ h1 {
 
 .footer-cols ul li:first-child {
   font-size: 1.4rem;
-  padding-bottom: 0.5rem;
-  border-bottom: #444 solid 1px;
-  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 2rem;
 }
 
 .footer-cols ul li h2 {
@@ -461,12 +465,20 @@ h1 {
 }
 
 .footer-cols ul li span {
+  text-align: center;
   color: #313332;
+}
+
+.footer-cols ul li hr{
+  width: 20%;
+  background-color: black;
+  border-color: black;
 }
 
 .footer-bottom {
   background-color: #333;
   color: white;
   padding: 1rem;
+  width: 100%;
   text-align: center;
 }
